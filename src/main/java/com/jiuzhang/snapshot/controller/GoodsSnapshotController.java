@@ -34,13 +34,7 @@ public class GoodsSnapshotController {
     @Resource
     DeliveryService deliveryService;
 
-    @RequestMapping("/in")
-    public String sss(Map<String, Object> a, Map<String, Object> b, Map<String, Object> c) {
-        a.put("a", "aaaaaaaaaaa");
-        b.put("b", "bbbbbbbbbbb");
-        c.put("c", "ccccccccccc");
-        return "a";
-    }
+
 
     @ApiAnnotation
     @ResponseBody

@@ -1,0 +1,88 @@
+#BookArea {
+
+}
+
+#buyArea {
+  text-align: center;
+}
+
+.center {
+  margin-left: 36%;
+}
+
+.area {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.line {
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline {
+  display: inline-block;
+}
+
+#goodsPrice {
+  color: red;
+}
+
+#goodsDesc {
+  font-size: 13px;
+}
+
+#bookResult {
+  font-size: 15px;
+}
+
+#bookSuccessArea {
+  position: absolute;
+  left:0;
+  top:0;
+  background: rgba(0,0,0,0.1);
+  z-Index: 999;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#bookResult, #orderNoResult, #lookSnapshotBtnArea {
+  text-align: center;
+  line-height: 2;
+}
+
+#bookResult {
+  margin-top: 20px;
+}
+
+#orderNoResult {
+  margin-bottom: 20px;
+}
+
+#lookSnapshotArea {
+  margin-left: 36%;
+  margin-top:30px;
+  margin-right: 30%;
+  border: 2px outset #B0C4DE;
+  padding: 15px;
+
+}
+
+.lh {
+  line-height: 1.5;
+}
+
+#goodsServiceResult {
+  margin-top: 20px;
+}
+
+.snapshot {
+   border: 2px inset #B0C4DE;
+   padding: 10px;
+   margin-top: 20px;
+   margin-right: 20%;
+}

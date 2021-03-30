@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>商品交易快照项目</title>
+
+    <link href="resources/snapshot.css" rel="stylesheet">
+
 </head>
 <body>
-    <h1> hello world~</h1>
+
+<div id="BookArea">
+    <div id="goodsImg" class="line center"><img src="./resources/images/renyangniu_1.jpeg" width="360" height="450"/></div>
+    <div id="goodsArea" class="area">
+        <div id="goodsId" class="line center hidden">765432</div>
+        <div id="shopId" class="line center hidden">823456</div>
+        <div id="userId" class="line center hidden">1234</div>
+        <div id="goodsPrice"  class="line center">￥<div id="goodsPriceNum" class="line">300</div></div>
+        <div id="goodsTitle"  class="line center">认养一头牛法式原味酸奶200g*12盒*2箱</div>
+        <div id="goodsDesc"  class="line center">法国益生菌发酵</div>
+    </div>
+    <div id="goodsInfoArea" class="area">
+        <div id="goodsServices"  class="line center">服务: 收货后结算 * 支持退换 * 快递发货</div>
+        <!--TODO express 的值需要根据 deliveryType radio 的值进行替换 -->
+        <div id="goodsServiceKeys" class="line center hidden">secureService,refundAndReturn,express,codpay,retailShop</div>
+        <div id="goodsChoice"  class="line center">选择：200g*12盒*2箱</div>
+    </div>
+    <div id="bookInfoArea" class="area">
+        <div id="deliveryTypeArea"  class="line center">
+            配送方式：
+            <input type="radio" name="deliveryType" value="express" checked>快递发货
+            <input type="radio" name="deliveryType" value="selfetch"> 到店自提
+            <input type="radio" name="deliveryType" value="localDelivery">同城配送
+        </div>
+        <div id="payWayArea"  class="line center">
+            支付方式：
+            <input type="radio" name="payWay" value="wxpay" checked>微信支付
+            <input type="radio" name="payWay" value="alipay">支付宝支付
+            <input type="radio" name="payWay" value="codpay">货到付款
+        </div>
+    </div>
+    <div id="buyArea"  class="line">
+        <button type="button" id="buyGoods" value="buyGoods" name="buyGoods" onclick="book();">立即购买</button>
+    </div>
+</div>
+
+<div id="bookSuccessArea">
+    <div id="bookResult"  class="line">订单成功！</div>
+    <div id="orderNoResult"  class="line"></div>
+    <div id="lookSnapshotBtnArea"  class="line">
+        <button type="button" id="lookSnapshotBtn" value="lookSnapshot" name="lookSnapshot">查看快照</button>
+        <button type="button" id="cancelBtn" value="cancel" name="cancel">取消</button>
+    </div>
+    <div id="lookSnapshotArea" class="line">
+
+
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="scripts/jquery-1.10.1.min.js"></script>
+<script src="scripts/snapshot.js"></script>
+
 </body>
 </html>
